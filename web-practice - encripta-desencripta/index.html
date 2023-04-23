@@ -1,0 +1,43 @@
+<!-- Autor David Jonathan Lázaro Pérez-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div class="d-grid">
+     <div class="parte-izquierda">
+        <header>
+            <h1 id="titulo-pagina">a</h1>
+        </header>
+
+           <section class="area-encriptar">
+             <textarea id="area-texto" placeholder="Ingresa el texto aqui"></textarea>
+             <p id="parrafo-exp"> <span id="simbolo-exclamacion">!</span> Solo letras minusculas y sin acentos</p>
+
+             <div class="botones">
+                <button class="boton-azul">Ecriptar</button>
+                <button class="boton-blanco">Desencriptar</button>
+             </div>
+           </section>
+     </div>
+
+     <div class="parte-derecha">
+        <section>
+            <p id="resultado"></p>
+            <img src="imagenes/Imagen-busqueda.png" alt="imagen de busqueda" id="imagen-notext">
+            <p id="texto-no-encontrado">Ningun mensjae fue encontrado</p>
+            <p id="texto-ingresa-texto-deseado">Ingrese el texto que desees encriptar o desencriptar</p>
+            <button id="boton-copiar">copiar</button>
+        </section>
+     </div>
+
+   </div>
+
+    <script src="programa.js"></script>
+</body>
+</html>

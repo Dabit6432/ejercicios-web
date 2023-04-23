@@ -1,0 +1,353 @@
+/* Autor David Jonathan Lázaro Pérez*/
+
+body {
+ background-color: #F3F5FC ;
+ margin: 0;
+}
+
+#titulo-pagina {
+    font-size: 80px;
+    margin: 0 0 20px 44px;
+    color: #0A3871;
+}
+
+@media (max-width: 768px) {
+    #titulo-pagina {
+        margin: 0 0 20px 0;
+    }
+}
+
+@media (max-width: 820px) {
+    #titulo-pagina {
+        margin: 0 0 20px 0;
+    }
+}
+
+
+.d-grid {
+    display: grid;
+    grid-template-columns: 70% 20%;
+    gap: 20px;
+}
+
+@media (max-width: 820px) {
+    .d-grid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#area-texto {
+    width: 700px;
+    height: 488px;
+    margin: 0 0 10px 240px;
+    border: none;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+@media (max-width: 1024px) {
+    #area-texto {
+        margin: 0 0 10px 0;
+    }
+}
+
+@media (max-width: 844px) {
+    #area-texto {
+        width: 80%;
+    }
+}
+
+@media (max-width: 820px) {
+    #area-texto {
+        margin: 0 0 10px 0;
+        width: 95%;
+    }
+}
+
+::placeholder {
+    font-size: 32px;
+    color: #0A3871;
+}
+
+#parrafo-exp {
+ width: 228px;
+ height: 18px;
+
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 400;
+ font-size: 12px;
+ line-height: 150%;
+ margin-left: 240px;
+ margin-top: 200px;
+
+/* identical to box height, or 18px */
+
+/* Gray/gray-400 */
+color: #495057;
+
+opacity: 0.8;
+}
+
+@media (max-width: 1024px) {
+    #parrafo-exp {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 820px) {
+    #parrafo-exp {
+        margin-left: 0;
+    }
+}
+
+#simbolo-exclamacion {
+    background: #495057;
+    height: 16px;
+    width: 16px;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 20px;
+}
+
+
+.botones {
+    margin: 24px 0 0 240px;
+}
+
+@media (max-width: 1024px) {
+    .botones {
+        margin: 24px 0 0 0;
+    }
+}
+
+@media (max-width: 820px) {
+    .botones {
+        margin: 24px 0 0 0;
+    }
+}
+
+.boton-azul {
+    padding: 15px 50px;
+    border-radius: 20px;
+    background-color: #0A3871;
+    color: white;
+    border: none;
+    width: 360px;
+}
+
+@media (max-width: 1024px) {
+    .boton-azul {
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .boton-azul {
+        width: 100%;
+    }
+}
+
+.boton-blanco {
+    padding: 15px 40px;
+    border-radius: 20px;
+    color: #1a5276;
+    border: solid 1px #1a5276;
+    width: 360px;
+    margin-left: 8px;
+}
+
+@media (max-width: 1024px) {
+    .boton-blanco {
+        margin-left: 20px;
+        margin-top: 0;
+        width: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .boton-blanco {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+#boton-copiar {
+    display: none;
+    margin-left: 10px;
+}
+
+
+#resultado {
+    position: relative;
+    width: 400px;
+    height: 944px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+
+    /* or 36px */
+
+    /* Gray/gray-400 */
+    color: #495057;
+}
+
+@media (max-width: 820px) {
+    #resultado {
+        width: auto;
+    }
+}
+
+#imagen-notext {
+    position: absolute;
+    top: 200px;
+    margin-left: 30px;
+}
+
+@media (max-width: 1024px) {
+    #imagen-notext {
+        top: 200px;
+        margin-left: 50px;
+    }
+}
+
+
+@media (max-width: 820px) {
+    #imagen-notext {
+        top: 1200px;
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    #imagen-notext {
+        top: 1200px;
+        margin-left: 0;
+    }
+}
+
+#texto-no-encontrado {
+
+
+ position: absolute;
+ width: 336px;
+ height: 58px;
+ font-family: 'Inter';
+ font-style: normal;
+ font-weight: 700;
+ font-size: 30px;
+ line-height: 120%;
+
+/* or 29px */
+ text-align: center;
+
+/* Gray/gray-500 */
+ color: #343A40;
+
+ top: 500px;
+ margin-left: 30px;
+}
+
+@media (max-width: 1024px) {
+    #texto-no-encontrado {
+        top: 500px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 820px) {
+    #texto-no-encontrado {
+        top: 1500px;
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    #texto-no-encontrado {
+        top: 1500px;
+        margin-left: 0;
+    }
+}
+
+#texto-ingresa-texto-deseado {
+    position: absolute;
+    top: 600px;
+    margin-left: 30px;
+
+    width: 336px;
+    height: 48px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+
+    /* or 24px */
+    text-align: center;
+
+    /* Gray/gray-400 */
+    color: #495057;
+}
+
+@media (max-width: 1024px) {
+    #texto-ingresa-texto-deseado {
+        top: 600px;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 820px) {
+    #texto-ingresa-texto-deseado {
+        top: 1600px;
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    #texto-ingresa-texto-deseado {
+        right: 30px;
+        margin-left: 0;
+    } 
+}
+
+
+#boton-copiar {
+    position: absolute;
+    display: block;
+    margin-left: 10px;
+    padding: 15px 40px;
+    border-radius: 20px;
+    color: #1a5276;
+    border: solid 1px #1a5276;
+    width: 280px;
+    background-color: white;
+    top: 855px;
+    margin-left: 60px;
+    display: none;
+}
+
+@media (max-width: 820px) {
+    #boton-copiar {
+        top: 1855px;
+        margin-left: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    #boton-copiar {
+         margin-left: 50px;
+    }
+}
