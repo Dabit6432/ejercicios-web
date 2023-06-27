@@ -1,0 +1,26 @@
+.alerta_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.alerta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 0 2rem 0 2rem;
+    border-radius: 2rem;
+}
+
+.texto__alerta {
+    font-family: "Krub";
+}
+
+@media screen and (max-width: 480px) {
+    .texto__alerta {
+        font-size: 1.5rem;
+    }
+}
