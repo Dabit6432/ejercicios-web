@@ -1,0 +1,293 @@
+/*Paleta de colores y fuente de texto*/
+:root {
+    --primario: #9C27B0;
+    --primarioOscuro: #89119D;
+    --secundario: #FFCE00;
+    --secundarioOscuro: rgb(233, 187, 2);
+    --blanco: #FFF;
+    --negro: #000;
+
+    --fuentePrincipal: font-family: 'Staatliches', cursive; /*Fuente de texto*/
+}
+
+
+html {
+    font-size: 62.5%; /*medida para mejorar rem a px */
+    box-sizing: border-box; /* medida para box sizing*/
+}
+
+
+body {
+    font-size: 16px; /* 1rem = 10px */ 
+    background-color: var(--primario);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/*medidas del box sizing*/
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  p {
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+  }
+  
+
+  h1,h2,h3 {
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+  }
+
+
+  /*Logo de la empresa*/
+  .header {
+    display: flex;
+    justify-content: center;
+  }
+
+  .header__logo {
+    margin: 2rem 0;
+  }
+
+  /*Navegacion*/
+  .navegacion {
+    background-color: var(--primarioOscuro);
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .navegacion__enlace {
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+
+  /*Tomamos el ultimo elemento de los dos a y le quitamos
+  el margen a la derecha para que se vea centrado el diseño*/
+  .navegacion__enlace:last-of-type {
+    margin-right: 0rem;
+  }
+
+  .navegacion__enlace--activo,
+  .navegacion__enlace:hover {
+    color: var(--secundario);
+  }
+
+  /*Main*/
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem; /*Muy util para separar las columnas y filas del grid*/
+  }
+
+  @media (min-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .producto{
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
+  }
+
+  .producto__imagen {
+    width: 100%;
+  }
+
+  .producto__nombre {
+    font-size: 4rem;
+  }
+
+  .producto__precio {
+    font-size: 2.8rem;
+    color: var(--secundario);
+  }
+
+  .producto__nombre,
+  .producto__precio {
+    font-family: var(--fuentePrincipal);
+    margin: 1rem;
+    text-align: center;
+  }
+
+  .grafico {
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .grafico--camisas {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    background-image: url(../img/grafico1.jpg);
+  }
+
+  .grafico--node {
+    background-image: url(../img/grafico2.jpg);
+    grid-column: 1 / 3;
+    grid-row: 8 / 9;
+  }
+
+
+  @media (min-width: 768px) {
+    .grafico--node {
+      grid-row: 5 / 6;
+      grid-column: 2 / 4;
+    }
+  }
+
+
+  /*Footer*/
+
+  .footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+
+  .footer__texto {
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+  }
+
+
+  /*Parte de nosotros*/
+
+  .infonosotros {
+    display: grid;
+    gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .infonosotros {
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  .infonosotros__imagen {
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: 768px) {
+    .infonosotros__imagen {
+      grid-column: 2 / 2;
+    }  
+  }
+
+  .infonosotros__texto {
+    line-height: 2rem;
+  }
+
+  /* Porque comprar con nosotros*/
+
+  .logosflex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .logosflex {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .icono__imagen {
+    width: 100%;
+  }
+
+  @media (min-width: 768px) {
+    .icono__imagen {
+      width: auto;
+      margin-left: 4rem;
+    }
+  }
+  .icono__texto {
+    text-align: center;
+    margin: 0;
+  }
+
+  .icono__parrafo {
+    text-align: center;
+  }
+
+  /*Seccion de producto*/
+ 
+  @media (min-width: 768px) {
+    .camisa {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+    }
+  }
+
+  .formulario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+ .formulario__campo {
+  border-color: var(--primarioOscuro) ;
+  border-style: solid;
+  border-width: 1rem;
+  background-color: transparent;
+  color: var(--blanco);
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  appearance: none;
+}
+
+  .formulario__submit {
+    background-color: var(--secundario);
+    border: none;
+    color: var(--negro);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: var(--fuentePrincipal);
+    padding: 1rem;
+    font-weight: bold;
+    grid-column: 1 / 3;
+  }
+
+  .formulario__submit:hover {
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
+  }
