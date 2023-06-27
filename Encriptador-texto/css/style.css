@@ -1,0 +1,152 @@
+body {
+    background-color:  #424949;
+}
+
+.contenedor {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.principal {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.entrada {
+    width: 44%;
+}
+
+#texto {
+    width: 100%;
+    height: 25rem;
+    background-color: #424949;
+    border: none;
+    color: #2471a3;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
+}
+
+#texto::placeholder {
+    color:#2471a3;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#texto:focus {
+    outline: none;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+#botones__encriptar {
+    border-radius: 2rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ff2825;
+    background-color: #424949;
+    border: solid 2px #ff2825;
+    cursor: pointer;
+}
+
+#botones__encriptar:hover {
+    border: solid 4px #ff2825;
+    text-decoration: underline;
+}
+
+#botones__desencriptar {
+    border-radius: 2rem;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #00b341;
+    background-color: #424949;
+    border: solid 2px #00b341;
+    cursor: pointer;
+}
+
+#botones__desencriptar:hover {
+    border: solid 4px #00b341;
+    text-decoration: underline;
+}
+
+.salida {
+    width: 40%;
+    border: solid 3px #2471a3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#resultado {
+    width: 99%;
+    height: 32rem;
+    background-color: #424949;
+    border-radius: 2rem;
+    border: none;
+    resize: none;
+}
+
+#resultado:focus {
+    outline: none;
+}
+
+.boton_copiar_padre {
+    margin: 1rem 0;
+}
+
+#boton__copiar {
+    width: 10rem;
+    border-radius: 2rem;
+    color: white;
+    background-color:#424949;
+    border: solid 3px #2471a3;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: .5rem;
+    cursor: pointer;
+}
+
+#boton__copiar:hover {
+    background-color: #2471a3;
+}
+
+
+/* Responsive tablet */
+@media screen and (max-width: 768px){
+    .principal {
+        flex-direction: column;
+    }
+
+    .entrada {
+        width: 100%;
+    }
+
+    .salida {
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+}
